@@ -115,6 +115,45 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/carbon/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/carbon/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/carbon/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/carbon/prebuilt/common/etc/backup.conf:system/etc/backup.conf \
+    vendor/carbon/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/carbon/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/carbon/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/carbon/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/carbon/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/carbon/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/carbon/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/carbon/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/carbon/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/carbon/prebuilt/common/etc/init.d/11battery:system/etc/init.d/11battery \
+    vendor/carbon/prebuilt/common/etc/init.d/12touch:system/etc/init.d/12touch \
+    vendor/carbon/prebuilt/common/etc/init.d/13minfree:system/etc/init.d/13minfree \
+    vendor/carbon/prebuilt/common/etc/init.d/14gpurender:system/etc/init.d/14gpurender \
+    vendor/carbon/prebuilt/common/etc/init.d/15sleepers:system/etc/init.d/15sleepers \
+    vendor/carbon/prebuilt/common/etc/init.d/16journalism:system/etc/init.d/16journalism \
+    vendor/carbon/prebuilt/common/etc/init.d/17sqlite3:system/etc/init.d/17sqlite3 \
+    vendor/carbon/prebuilt/common/etc/init.d/18wifisleep:system/etc/init.d/18wifisleep \
+    vendor/carbon/prebuilt/common/etc/init.d/19iostats:system/etc/init.d/19iostats \
+    vendor/carbon/prebuilt/common/etc/init.d/20setrenice:system/etc/init.d/20setrenice \
+    vendor/carbon/prebuilt/common/etc/init.d/21tweaks:system/etc/init.d/21tweaks \
+    vendor/carbon/prebuilt/common/etc/init.d/24speedy_modified:system/etc/init.d/24speedy_modified \
+    vendor/carbon/prebuilt/common/etc/init.d/25loopy_smoothness_tweak:system/etc/init.d/25loopy_smoothness_tweak \
+    vendor/carbon/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
+    vendor/carbon/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/carbon/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
+    vendor/carbon/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/carbon/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
+
+# Added xbin files
+PRODUCT_COPY_FILES += \
+    vendor/carbon/prebuilt/common/xbin/zip:system/xbin/zip \
+    vendor/carbon/prebuilt/common/xbin/zipalign:system/xbin/zipalign
+
 # etc
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.liquid.rc:root/init.liquid.rc
