@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/viper/ViPER4Android.apk:system/app/ViPER4Android.apk
 
+# KK_launcher
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/app/KK_Launcher.apk:system/app/KK_Launcher.apk
+
 PRODUCT_COPY_FILES += \
     external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
 
