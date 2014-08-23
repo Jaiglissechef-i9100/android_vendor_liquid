@@ -21,6 +21,7 @@ add_lunch_combo liquid_honami-userdebug
 add_lunch_combo liquid_i605-userdebug
 add_lunch_combo liquid_i777-userdebug
 add_lunch_combo liquid_i9082-userdebug
+add_lunch_combo liquid_i9100-userdebug
 add_lunch_combo liquid_i9300-userdebug
 add_lunch_combo liquid_i9305-userdebug
 add_lunch_combo liquid_i9500-userdebug
