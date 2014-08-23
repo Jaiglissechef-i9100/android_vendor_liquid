@@ -50,6 +50,9 @@ PRODUCT_PACKAGES += \
     DashClock \
     DeskClock \
     KernelTweaker \
+    alogcat \
+    GPSOptimizer \
+    HALO \
     LiquidFileManager \
     LiquidLauncher \
     LiquidPapers \
