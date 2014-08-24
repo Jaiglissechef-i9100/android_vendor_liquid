@@ -118,11 +118,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# Added xbin files
-PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/xbin/zip:system/xbin/zip \
-    vendor/liquid/prebuilt/common/xbin/zipalign:system/xbin/zipalign
-
 # etc
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.liquid.rc:root/init.liquid.rc
