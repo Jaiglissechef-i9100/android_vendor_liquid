@@ -161,9 +161,8 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.liquid.rc:root/init.liquid.rc
 
 # media
-ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
-    PRODUCT_BOOTANIMATION := vendor/liquid/prebuilt/common/bootanimation/$(TARGET_SCREEN_WIDTH).zip:system/media/bootanimation.zip
-endif
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # nfc
 PRODUCT_COPY_FILES += \
