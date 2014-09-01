@@ -52,13 +52,7 @@ PRODUCT_PACKAGES += \
     KernelTweaker \
     alogcat \
     GPSOptimizer \
-    HALO \
-    PerformanceControl \
-    LiquidFileManager \
-    LiquidLauncher \
-    LiquidPapers \
-    LiquidStats \
-    LiquidUpdater
+    HALO
 
 # superuser
 SUPERUSER_EMBEDDED := true
