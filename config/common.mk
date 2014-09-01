@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
     alogcat \
     GPSOptimizer \
     HALO \
+    PerformanceControl \
     LiquidFileManager \
     LiquidLauncher \
     LiquidPapers \
