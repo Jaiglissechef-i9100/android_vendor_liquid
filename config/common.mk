@@ -18,6 +18,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     persist.sys.root_access=3
 
+ifeq ($(RELEASE),true)
+# Disable multithreaded dexopt by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dalvik.multithread=false
+endif
+
 # Theme engine
 include vendor/liquid/config/themes_common.mk
 
@@ -41,8 +47,7 @@ PRODUCT_PACKAGES += \
     libemoji \
     LiveWallpapersPicker \
     LockClock \
-    SoundRecorder \
-    Torch
+    SoundRecorder
 
 # Extras for Liquid
 PRODUCT_PACKAGES += \
@@ -210,7 +215,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # statistics identity
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.romstats.url=http://www.drdevs.com/stats/liquid/ \
+    ro.romstats.url=http://stats.liquidsmooth.net/ \
     ro.romstats.name=LiquidSmooth \
     ro.romstats.version=$(LIQUID_VERSION) \
     ro.romstats.askfirst=0 \
